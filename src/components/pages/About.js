@@ -4,14 +4,9 @@
    - Explain what you learned throughout your time here
    - Explain your favorite languages and why
 */
-import Navbar from "../navagation/Navbar";
 
 function About() {
-  return (
-    <div>
-      <Navbar />
-    </div>
-  );
+  return <div>My about page</div>;
 }
 
 export default About;

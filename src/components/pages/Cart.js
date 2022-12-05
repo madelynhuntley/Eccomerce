@@ -5,3 +5,7 @@
     - Checkout button (does not have to work)
     - remove from cart
 */
+
+export default function Cart() {
+  return <h1>Hello</h1>;
+}
