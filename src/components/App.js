@@ -17,11 +17,13 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Switch>
-          <Route path="/home" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+
+          <Route path="/home" component={Home} />
           <Route exact path="/products" component={Products} />
           <Route path="/products/:id" component={Product} />
+
           <Route path="/cart" component={Cart} />
         </Switch>
       </BrowserRouter>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ProductItem from "../product/ProductItem";
+import Product from "./Product";
 
 /*
 - Products Page
@@ -27,7 +28,7 @@ export default function Products() {
           key={product.id}
           id={product.id}
           title={product.title}
-          price={product.price}
+          cashmoney={product.price}
           category={product.category}
           description={product.description}
           image={product.image}
@@ -38,7 +39,7 @@ export default function Products() {
 
   return (
     <div className="page-content">
-      <div className="product-card">{renderProducts()}</div>
+      <div className="product-cards">{renderProducts()}</div>
     </div>
   );
 }
