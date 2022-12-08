@@ -1,11 +1,14 @@
 .page-content {
+  cursor: default;
   height: 100vh;
   width: 100vw;
 
   .product-cards {
+    border: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 15px;
+
     a {
       text-decoration: none;
       color: black;
@@ -13,14 +16,30 @@
       justify-content: space-around;
 
       .card-content {
-        border: 1px solid gray;
+        &:hover {
+          box-shadow: -5px 3px 24px -1px rgba(158, 152, 152, 0.75);
+          -webkit-box-shadow: -5px 3px 24px -1px rgba(158, 152, 152, 0.75);
+          -moz-box-shadow: -5px 3px 24px -1px rgba(158, 152, 152, 0.75);
+        }
+      }
+
+      .card-content {
         height: 500px;
         width: 400px;
 
         img {
           position: center center;
           height: 60%;
-          width: 90%;
+          width: 70%;
+        }
+
+        button {
+          width: 100px;
+          height: 40px;
+          border-radius: 15px;
+          border: none;
+          background-color: plum;
+          color: white;
         }
       }
     }

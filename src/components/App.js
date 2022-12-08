@@ -20,9 +20,10 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
 
-          <Route path="/home" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/products" component={Products} />
           <Route path="/products/:id" component={Product} />
+          <Route path="/products/:category" component={Product} />
 
           <Route path="/cart" component={Cart} />
         </Switch>
