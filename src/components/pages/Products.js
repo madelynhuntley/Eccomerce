@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import ProductItem from "../product/ProductItem";
-import Product from "./Product";
+import ProductItem from "../products/ProductItem";
 
 /*
 - Products Page
@@ -18,7 +17,8 @@ export default function Products() {
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
-      .then((data) => setProducts(data));
+      .then((data) => setProducts(data))
+      .catch((err) => console.error("Products error", err));
   }, []);
 
   function renderProducts() {
@@ -39,6 +39,10 @@ export default function Products() {
 
   return (
     <div className="page-content">
+      <div className="header-wrapper">
+        <h1>Welcome!</h1>
+        <h1 className="shop">Shop</h1>
+      </div>
       <div className="product-cards">{renderProducts()}</div>
     </div>
   );

@@ -7,8 +7,10 @@ import Truncate from "../Truncate";
 function Home() {
   return (
     <div className="page-content-home">
-      <h1>Welcome!</h1>
-      <h1 className="shop">Shop</h1>
+      <div className="header-wrapper">
+        <h1>Welcome!</h1>
+        <h1 className="shop">Shop</h1>
+      </div>
 
       <div className="womens">
         <div className="left-lady">
