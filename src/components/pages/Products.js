@@ -41,7 +41,7 @@ export default function Products() {
     <div className="page-content">
       <div className="header-wrapper">
         <h1>Welcome!</h1>
-        <h1 className="shop">Shop</h1>
+        <h1 className="shop">Get Shopping!</h1>
       </div>
       <div className="product-cards">{renderProducts()}</div>
     </div>

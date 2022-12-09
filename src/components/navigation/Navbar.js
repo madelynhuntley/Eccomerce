@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <h2>
+    <div className="navbar-htwo">
       <NavLink exact to="/">
         <FontAwesomeIcon icon="house" />
       </NavLink>
@@ -13,7 +13,7 @@ function Navbar() {
       <NavLink to="/cart">
         <FontAwesomeIcon icon="shopping-cart" />
       </NavLink>
-    </h2>
+    </div>
   );
 }
 

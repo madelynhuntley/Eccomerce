@@ -8,10 +8,18 @@ import Products from "./pages/Products";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import Navbar from "./navigation/Navbar";
+import Footer from "./navigation/Footer";
+import { useEffect } from "react";
 
 icons();
 
 function App() {
+  useEffect(() => {
+    fetch("https://fakestoreapi.com/carts")
+      .then((res) => res.json())
+      .then((json) => console.log(json))
+      .catch((err) => console.error("Cart error", err));
+  }, []);
   return (
     <div className="App">
       <BrowserRouter>
@@ -27,6 +35,7 @@ function App() {
 
           <Route path="/cart" component={Cart} />
         </Switch>
+        <Footer />
       </BrowserRouter>
     </div>
   );

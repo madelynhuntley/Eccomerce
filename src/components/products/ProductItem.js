@@ -12,6 +12,7 @@ export default function ProductItem(props) {
         <Truncate>{props.description}</Truncate>
         <h4>${props.cashmoney}</h4>
       </Link>
+      <Link to="/cart"></Link>
       <button>Add To {<FontAwesomeIcon icon="shopping-cart" />}</button>
     </div>
   );

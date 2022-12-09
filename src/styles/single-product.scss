@@ -1,0 +1,38 @@
+.prod-content {
+  margin: 0;
+  display: flex;
+  width: 100vw;
+
+  .left-content {
+    width: 50vw;
+
+    img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+    }
+  }
+  .right-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-self: center;
+    align-self: center;
+    width: 50vw;
+    row-gap: 10px;
+
+    span {
+      margin: 0;
+
+      svg {
+        color: gold;
+      }
+    }
+
+    button {
+      margin-top: 0;
+      align-self: center;
+      justify-self: center;
+    }
+  }
+}
