@@ -14,12 +14,12 @@ import { useEffect } from "react";
 icons();
 
 function App() {
-  useEffect(() => {
-    fetch("https://fakestoreapi.com/carts")
-      .then((res) => res.json())
-      .then((json) => console.log(json))
-      .catch((err) => console.error("Cart error", err));
-  }, []);
+  // useEffect(() => {
+  //   fetch("https://fakestoreapi.com/carts")
+  //     .then((res) => res.json())
+  //     .then((json) => console.log(json))
+  //     .catch((err) => console.error("Cart error", err));
+  // }, []);
   return (
     <div className="App">
       <BrowserRouter>
@@ -27,12 +27,9 @@ function App() {
         <Switch>
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
-
           <Route exact path="/" component={Home} />
           <Route exact path="/products" component={Products} />
           <Route path="/products/:id" component={Product} />
-          <Route path="/products/:category" component={Product} />
-
           <Route path="/cart" component={Cart} />
         </Switch>
         <Footer />

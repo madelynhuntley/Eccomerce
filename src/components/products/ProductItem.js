@@ -10,7 +10,7 @@ export default function ProductItem(props) {
         <img src={props.image} alt="product-phot0" />
         <Truncate>{props.title}</Truncate>
         <Truncate>{props.description}</Truncate>
-        <h4>${props.cashmoney}</h4>
+        <h4>${props.price}</h4>
       </Link>
       <Link to="/cart"></Link>
       <button>Add To {<FontAwesomeIcon icon="shopping-cart" />}</button>
