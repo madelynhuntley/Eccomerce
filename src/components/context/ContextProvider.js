@@ -9,9 +9,10 @@ export default function CartProvider({ children }) {
     const inCart = cart.find((item) => item.id === product.id);
 
     if (inCart) {
-      window.prompt("Item in cart!");
+      window.alert("Item in cart!");
     } else {
       setCart((c) => [...c, product]);
+      alert("Added to cart");
     }
   }
 
@@ -21,10 +22,15 @@ export default function CartProvider({ children }) {
     }
   }
 
+  function getTotal() {
+    return cart.reduce((prev, current) => prev + current.price, 0);
+  }
+
   const cartState = {
     cart,
     addProduct,
     clearCart,
+    getTotal,
   };
 
   return (

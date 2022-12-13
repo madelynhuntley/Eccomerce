@@ -5,12 +5,14 @@
     - Checkout button (does not have to work)
     - remove from cart
 */
-import { useContext } from "react";
+
+import { useContext, useState } from "react";
+
 import { CartContext } from "../context/ContextProvider";
 import CartItem from "../products/CartItem";
 
 export default function Cart() {
-  const { cart } = useContext(CartContext);
+  const { cart, getTotal } = useContext(CartContext);
 
   function renderCart() {
     return cart.map((item) => {
@@ -28,5 +30,11 @@ export default function Cart() {
     });
   }
 
-  return <div className="cart-page-content">{renderCart()}</div>;
+  return (
+    <div className="cart-page-content">
+      {renderCart()}
+
+      <div className="total">Total: ${getTotal()}</div>
+    </div>
+  );
 }
