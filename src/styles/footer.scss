@@ -1,7 +1,6 @@
 .footer {
-  position: relative;
-  margin: 0;
-  bottom: 0;
+  position: absolute;
+  flex-basis: auto;
   height: 77px;
   width: 100%;
   background-color: black;
@@ -14,6 +13,7 @@
     color: #fff;
   }
   a:hover {
+    cursor: pointer;
     text-shadow: -3px 0px 11px rgba(111, 95, 95, 0.6);
   }
 }

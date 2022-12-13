@@ -1,10 +1,6 @@
-import {
-  faHouse,
-  faCartShopping,
-  faMagnifyingGlass,
-} from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
-const icons = () => library.add(faHouse, faCartShopping, faMagnifyingGlass);
+const icons = () => library.add(faHouse, faCartShopping);
 
 export default icons;

@@ -2,6 +2,11 @@
   cursor: default;
   height: 100vh;
   width: 100vw;
+  .header-wrapper {
+    .btn-act :hover {
+      cursor: pointer;
+    }
+  }
 
   .product-cards {
     border: none;
@@ -31,6 +36,9 @@
         border: none;
         background-color: #e879f9;
         color: white;
+      }
+      button :hover {
+        cursor: pointer;
       }
     }
 

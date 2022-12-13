@@ -44,22 +44,34 @@ export default function Products() {
       <div className="header-wrapper">
         <h1>Welcome!</h1>
         <div className="electronics">
-          <button onClick={() => setCategory("/category/electronics")}>
+          <button
+            className="btn-act"
+            onClick={() => setCategory("/category/electronics")}
+          >
             Electronics
           </button>
         </div>
         <div className="jewlry">
-          <button onClick={() => setCategory("/category/jewelery")}>
+          <button
+            className="btn-act"
+            onClick={() => setCategory("/category/jewelery")}
+          >
             Jewelery
           </button>
         </div>
         <div className="mens-clothing">
-          <button onClick={() => setCategory("/category/men's clothing")}>
+          <button
+            className="btn-act"
+            onClick={() => setCategory("/category/men's clothing")}
+          >
             Men's Clothing
           </button>
         </div>
         <div className="womens-clothing">
-          <button onClick={() => setCategory("/category/women's clothing")}>
+          <button
+            className="btn-act"
+            onClick={() => setCategory("/category/women's clothing")}
+          >
             Women's Clothing
           </button>
         </div>

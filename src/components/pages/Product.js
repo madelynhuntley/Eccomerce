@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { Rating } from "react-simple-star-rating";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
+import { CartContext } from "../context/ContextProvider";
 /* 
 - Product Page (Show Route)
     - Product image
@@ -12,7 +13,9 @@ import { Link } from "react-router-dom";
     - description
 */
 export default function Product(props) {
+  const { addProduct } = useContext(CartContext);
   const [product, setProduct] = useState({});
+
   useEffect(() => {
     fetch(`https://fakestoreapi.com/products/${props.match.params.id}`)
       .then((res) => res.json())
@@ -37,7 +40,7 @@ export default function Product(props) {
         <h3>{product.description}</h3>
         <h2>${product.price}</h2>
         <Link to="/cart">
-          <button>
+          <button onClick={() => addProduct(product)}>
             Add to <FontAwesomeIcon icon="shopping-cart" />{" "}
           </button>
         </Link>
