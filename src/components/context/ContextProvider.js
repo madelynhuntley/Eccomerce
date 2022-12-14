@@ -5,6 +5,10 @@ export const CartContext = createContext();
 export default function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
 
+  function message() {
+    <h3>Added to cart</h3>;
+  }
+
   function addProduct(product) {
     const inCart = cart.find((item) => item.id === product.id);
 
@@ -12,7 +16,7 @@ export default function CartProvider({ children }) {
       window.alert("Item in cart!");
     } else {
       setCart((c) => [...c, product]);
-      alert("Added to cart");
+      message();
     }
   }
 

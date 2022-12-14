@@ -6,10 +6,15 @@ export default function CartItem(props) {
     <div className="banner-card">
       <Link to={`/products/${props.id}`}>
         <img src={props.image} alt="product-phot0" />
+      </Link>
+      <div className="title-desc" style={{ padding: "10px" }}>
         <Truncate>{props.title}</Truncate>
         <Truncate>{props.description}</Truncate>
+      </div>
+      <div className="price-remove" style={{ padding: "10px" }}>
         <h4>${props.price}</h4>
-      </Link>
+        <button>Remove</button>
+      </div>
     </div>
   );
 }

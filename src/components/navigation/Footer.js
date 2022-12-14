@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <div className="footer" style={{ bottom: "o" }}>
       <NavLink exact to="/">
         <FontAwesomeIcon icon="house" />
       </NavLink>

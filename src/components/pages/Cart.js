@@ -6,13 +6,13 @@
     - remove from cart
 */
 
-import { useContext, useState } from "react";
+import { useContext } from "react";
 
 import { CartContext } from "../context/ContextProvider";
 import CartItem from "../products/CartItem";
 
 export default function Cart() {
-  const { cart, getTotal } = useContext(CartContext);
+  const { cart, getTotal, clearCart } = useContext(CartContext);
 
   function renderCart() {
     return cart.map((item) => {
@@ -33,8 +33,11 @@ export default function Cart() {
   return (
     <div className="cart-page-content">
       {renderCart()}
-
-      <div className="total">Total: ${getTotal()}</div>
+      <hr></hr>
+      <div className="total">
+        <button onClick={() => clearCart()}>Clear Cart</button>Total: $
+        {getTotal()}
+      </div>
     </div>
   );
 }
