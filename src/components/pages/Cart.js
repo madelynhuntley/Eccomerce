@@ -7,6 +7,7 @@
 */
 
 import { useContext } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { CartContext } from "../context/ContextProvider";
 import CartItem from "../products/CartItem";
@@ -37,6 +38,9 @@ export default function Cart() {
       <div className="total">
         <button onClick={() => clearCart()}>Clear Cart</button>Total: $
         {getTotal()}
+        <button>
+          Checkout <FontAwesomeIcon icon="shopping-cart" />
+        </button>
       </div>
     </div>
   );

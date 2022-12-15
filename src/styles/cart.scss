@@ -37,4 +37,14 @@
       justify-content: center;
     }
   }
+  .total {
+    // display: flex;
+    // flex-direction: column;
+    font-size: 2em;
+    justify-content: space-around;
+
+    button {
+      margin: 1rem;
+    }
+  }
 }
