@@ -18,12 +18,13 @@ export default function ProductItem(props) {
         <p>
           <Truncate>{props.description}</Truncate>
         </p>
-        <h4>${props.price}</h4>
+        <h4>${props.price.toFixed(2)}</h4>
       </Link>
-      <Link to="/cart"></Link>
-      <button onClick={() => addProduct(props)}>
-        Add To {<FontAwesomeIcon icon="shopping-cart" />}
-      </button>
+      <Link to="/cart">
+        <button onClick={() => addProduct(props)}>
+          Add to <FontAwesomeIcon icon="shopping-cart" />
+        </button>
+      </Link>
     </div>
   );
 }

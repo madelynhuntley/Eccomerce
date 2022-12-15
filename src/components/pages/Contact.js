@@ -1,7 +1,12 @@
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export default function Contact() {
-  function feedBack() {
-    alert("message sent");
-  }
+  const notify = () => {
+    const timeout = toast("Message Sent");
+
+    setTimeout(timeout, 8000);
+  };
 
   return (
     <div className="contact-content">
@@ -28,9 +33,10 @@ export default function Contact() {
             placeholder="Write something.."
           ></textarea>
           <div className="form-btn">
-            <button onClick={feedBack()} type="submit">
+            <button onClick={notify} type="submit">
               SUBMIT
             </button>
+            <ToastContainer />
           </div>
         </form>
       </div>

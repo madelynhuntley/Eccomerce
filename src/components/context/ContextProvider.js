@@ -23,7 +23,8 @@ export default function CartProvider({ children }) {
   }
 
   function getTotal() {
-    return cart.reduce((prev, current) => prev + current.price, 0);
+    let total = cart.reduce((prev, current) => prev + current.price, 0);
+    return total.toFixed(2);
   }
 
   const cartState = {
