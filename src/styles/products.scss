@@ -15,6 +15,11 @@
     row-gap: 15px;
 
     .card-content {
+      &:hover {
+        box-shadow: -5px 3px 24px -1px rgba(158, 152, 152, 0.75);
+        -webkit-box-shadow: -5px 3px 24px -1px rgba(158, 152, 152, 0.75);
+        -moz-box-shadow: -5px 3px 24px -1px rgba(158, 152, 152, 0.75);
+      }
       height: 600px;
       width: 400px;
 
@@ -30,23 +35,16 @@
       }
 
       button {
+        &:hover {
+          cursor: pointer;
+        }
+
         width: 120px;
         height: 40px;
         border-radius: 15px;
         border: none;
         background-color: #e879f9;
         color: white;
-      }
-      button :hover {
-        cursor: pointer;
-      }
-    }
-
-    .card-content {
-      &:hover {
-        box-shadow: -5px 3px 24px -1px rgba(158, 152, 152, 0.75);
-        -webkit-box-shadow: -5px 3px 24px -1px rgba(158, 152, 152, 0.75);
-        -moz-box-shadow: -5px 3px 24px -1px rgba(158, 152, 152, 0.75);
       }
     }
   }

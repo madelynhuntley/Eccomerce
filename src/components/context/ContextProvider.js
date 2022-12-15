@@ -16,7 +16,7 @@ export default function CartProvider({ children }) {
       window.alert("Item in cart!");
     } else {
       setCart((c) => [...c, product]);
-      message();
+      alert("Added to cart");
     }
   }
 
@@ -31,6 +31,7 @@ export default function CartProvider({ children }) {
   }
 
   const cartState = {
+    message,
     cart,
     addProduct,
     clearCart,

@@ -8,8 +8,12 @@ export default function CartItem(props) {
         <img src={props.image} alt="product-phot0" />
       </Link>
       <div className="title-desc" style={{ padding: "10px" }}>
-        <Truncate>{props.title}</Truncate>
-        <Truncate>{props.description}</Truncate>
+        <h3>
+          <Truncate>{props.title}</Truncate>
+        </h3>
+        <p>
+          <Truncate>{props.description}</Truncate>
+        </p>
       </div>
       <div className="price-remove" style={{ padding: "10px" }}>
         <h4>${props.price}</h4>
