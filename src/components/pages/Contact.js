@@ -1,12 +1,3 @@
-/* 
-- Nicely styled contact form elements
-    - This does not have to be functional, but wire up a notification that shows the user that the message was sent, 
-	and it should clear the form after.
-*/
-
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-
 export default function Contact() {
   function feedBack() {
     alert("message sent");

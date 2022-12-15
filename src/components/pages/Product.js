@@ -4,14 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 import { CartContext } from "../context/ContextProvider";
-/* 
-- Product Page (Show Route)
-    - Product image
-    - Count
-    - add to cart
-    - remove from cart
-    - description
-*/
+
 export default function Product(props) {
   const { addProduct } = useContext(CartContext);
   const [product, setProduct] = useState({});

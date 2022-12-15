@@ -1,10 +1,3 @@
-/* 
- - About Page
-   - Explain your capstone
-   - Explain what you learned throughout your time here
-   - Explain your favorite languages and why
-*/
-
 function About() {
   return (
     <div className="about-page">
@@ -28,7 +21,7 @@ function About() {
           <h2>The Single Product page</h2>
           <h3>
             The single product page contains the title, full description, rating
-            stars, the image of the product, and an Add To Cart Button.
+            stars, the image of the product, and an add to cart button.
           </h3>
 
           <h2>Cart Page</h2>
