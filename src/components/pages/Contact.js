@@ -10,35 +10,30 @@ export default function Contact() {
 
   return (
     <div className="contact-content">
-      <div class="left-form">
-        <form class="group">
-          <div class="group">
-            <input
-              type="text"
-              id="firstname"
-              name="firstname"
-              placeholder="Your name.."
-            />
-          </div>
+      <div className="contact-form">
+        <h1>Leave some FeedBack</h1>
+        <form className="group">
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="Your name.."
+          />
 
-          <div class="group">
-            <input
-              type="text"
-              id="lastname"
-              name="lastname"
-              placeholder="Your last name.."
-            />
-          </div>
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
 
-          <div class="group">
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Write something.."
-            ></textarea>
-          </div>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+          ></textarea>
         </form>
-        <div class="submit">
+        <div className="submit">
           <button type="submit" onClick={() => messageSent()}>
             SUBMIT
           </button>
