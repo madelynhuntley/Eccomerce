@@ -3,9 +3,13 @@
     - This does not have to be functional, but wire up a notification that shows the user that the message was sent, 
 	and it should clear the form after.
 */
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export default function Contact() {
-  function messageSent() {
-    return <div className="message">Message sent</div>;
+  function feedBack() {
+    alert("message sent");
   }
 
   return (
@@ -32,12 +36,12 @@ export default function Contact() {
             name="subject"
             placeholder="Write something.."
           ></textarea>
+          <div className="form-btn">
+            <button onClick={feedBack()} type="submit">
+              SUBMIT
+            </button>
+          </div>
         </form>
-        <div className="submit">
-          <button type="submit" onClick={() => messageSent()}>
-            SUBMIT
-          </button>
-        </div>
       </div>
     </div>
   );

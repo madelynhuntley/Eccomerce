@@ -35,7 +35,7 @@ function About() {
           <h3>
             Here I made banner cards that contain, the image, title,
             description, price, and a button to remove an item. Below I have a
-            clear cart button and the caluculated total.
+            clear cart button, checkout button, and the caluculated total.
           </h3>
 
           <h2>Contact Page</h2>
@@ -85,7 +85,7 @@ function About() {
           favoriate language is React JavaScript. I enjoy the freedom and
           challenge of having less built in shortcuts. Components are HUGE.
           Being able to seperate a moving part and break it down, is so
-          satifying to me, I love being organized with it and reconizing when I
+          satifying to me. I love being organized with it and reconizing when I
           can turn something into a component. I like that Reacts User Interface
           is the browser rather than the console. At first I was scared of
           JavaScript because the errors were unfimiluar. Now the errors open

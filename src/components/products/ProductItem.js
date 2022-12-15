@@ -6,7 +6,7 @@ import Truncate from "../Truncate";
 import { CartContext } from "../context/ContextProvider";
 
 export default function ProductItem(props) {
-  const { addProduct, message } = useContext(CartContext);
+  const { addProduct } = useContext(CartContext);
 
   return (
     <div className="card-content">
@@ -21,7 +21,7 @@ export default function ProductItem(props) {
         <h4>${props.price}</h4>
       </Link>
       <Link to="/cart"></Link>
-      <button onClick={() => addProduct(props) && message()}>
+      <button onClick={() => addProduct(props)}>
         Add To {<FontAwesomeIcon icon="shopping-cart" />}
       </button>
     </div>

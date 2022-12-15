@@ -5,11 +5,6 @@ export const CartContext = createContext();
 export default function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
 
-  function message() {
-    const message = <h3>Added to cart</h3>;
-    return message;
-  }
-
   function addProduct(product) {
     const inCart = cart.find((item) => item.id === product.id);
 
@@ -17,8 +12,7 @@ export default function CartProvider({ children }) {
       window.alert("Item in cart!");
     } else {
       setCart((c) => [...c, product]);
-      message();
-      // alert("Added to cart");
+      return <p style={{ color: "black" }}>Added to Cart</p>;
     }
   }
 
@@ -33,7 +27,6 @@ export default function CartProvider({ children }) {
   }
 
   const cartState = {
-    message,
     cart,
     addProduct,
     clearCart,
