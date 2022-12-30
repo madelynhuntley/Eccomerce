@@ -31,17 +31,19 @@ function About() {
             clear cart button, checkout button, and the caluculated total.
           </h3>
 
-          <h2>Contact Page</h2>
-          <h3>
-            The contact page contains a form for the user to leave feedback. And
-            a map that represents where the buisness would be located. After you
-            submit the form it clears, and a message appears letting the user
-            know their message was sent.
-          </h3>
+          <div className="contact-page">
+            <h2>Contact Page</h2>
+            <h3>
+              The contact page contains a form for the user to leave feedback.
+              And a map that represents where the buisness would be located.
+              After you submit the form it clears, and a message appears letting
+              the user know their message was sent.
+            </h3>
+          </div>
           <hr></hr>
         </div>
         <div className="what-i-learned">
-          <h1>What I Learned in My Time at DevPipeline</h1>
+          <h1>What I Learned at DevPipeline</h1>
           <h2>Fail FAST</h2>
           <h2>Own Your Jouney</h2>
           <h2>The Key Foundations `(mind blowing knowlege)`</h2>

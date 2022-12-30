@@ -8,7 +8,7 @@
 
 .about-page {
   display: grid;
-  grid-template-rows: 1fr * 3;
+  grid-template-rows: 1fr * 4;
   margin: 0;
   background-image: url(https://source.unsplash.com/random/?purple);
   color: white;
@@ -16,6 +16,7 @@
   .main-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
     .pages-api {
       grid-column: 1;
       @include aboutcolums();
@@ -37,5 +38,25 @@
     justify-self: center;
     width: 80%;
     padding: 1em;
+  }
+}
+
+@media (min-width: 414px) {
+  .about-page {
+    width: 100vw;
+    background-image: url(https://source.unsplash.com/random/?black);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      width: 80%;
+    }
+
+    .main-content {
+      width: fit-content;
+      .pages-api {
+      }
+    }
   }
 }
